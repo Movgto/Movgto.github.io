@@ -44,7 +44,7 @@ This is an exercise for building a responsive portfolio webpage with a mobile-fi
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Coming soon
+[Online version here](https://movgto.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -53,12 +53,13 @@ This is an exercise for building a responsive portfolio webpage with a mobile-fi
 Microverse is awesome!
 
 To get a local copy up and running, follow these steps.
+``
+It's just a static website by now, so running the HTML file is all you need to run the project.
+``
 
 ### How to use
 
-In order to run this project you need:
-
-Smile :)
+It's just a static webpage by now, so you just need to run the HTML file and you're good to go.
 
 ## 👥 Authors <a name="authors"></a>
 
