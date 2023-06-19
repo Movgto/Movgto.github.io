@@ -1,0 +1,78 @@
+#about-me {
+  overflow: visible;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#about-me .title {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#about-me .text {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  color: #42526e;
+  text-align: center;
+}
+
+#ab-me-img {
+  background-image: url("icons/about-me-mobile.svg");
+  background-size: auto;
+  background-clip: border-box;
+  width: 300%;
+  height: 150%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -3rem;
+  z-index: -1;
+  bottom: -5rem;
+}
+
+#ab-me-1-img {
+  background-image: url("icons/about-me-mobile-1.svg");
+  background-size: contain;
+  background-clip: content-box;
+  background-position: right;
+  width: 50%;
+  height: 40%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: -15%;
+  right: -3rem;
+}
+
+#ab-me-desktop-img {
+  background-image: url("icons/about-me-desktop.svg");
+  background-size: contain;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 40%;
+  height: 50%;
+  display: none;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: -3rem;
+}
+
+#ab-me-desktop-1-img {
+  background-image: url("icons/about-me-desktop-1.svg");
+  background-size: contain;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 35%;
+  display: none;
+  z-index: -1;
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+}

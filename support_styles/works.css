@@ -1,0 +1,99 @@
+#works {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#works-ctnr {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+.work-card {
+  position: relative;
+  display: flex;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 25rem;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.work-card .bottom-area {
+  margin-top: 15rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.work-card .bottom-area .top {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-weight: 600;
+  font-size: max(min(4vw, 2rem), 1rem);
+  line-height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  color: #3a4a42;
+}
+
+.work-card .bottom-area .tech {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.tech-card {
+  background-color: #ebf0ee;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  font-size: max(min(4vw, 0.8rem), 0.5rem);
+  padding: 0.8rem 0.5rem;
+  color: #172b4d;
+}
+
+#recent-works .text {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.see-btn {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  background-color: #36b37f;
+  border-radius: 0.3rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.06rem;
+  color: #fff;
+  padding: 0.7rem;
+  user-select: none;
+  border: none;
+}

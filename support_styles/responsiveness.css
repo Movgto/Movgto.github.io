@@ -1,0 +1,132 @@
+@media only screen and (min-width: 768px) {
+  #padding-ctn {
+    padding: 0 14rem;
+  }
+
+  #headline {
+    margin-top: 18rem;
+    max-width: 55rem;
+  }
+
+  #header-img-desktop {
+    display: block;
+  }
+
+  #header-img {
+    display: none;
+  }
+
+  #toolbar {
+    display: none;
+  }
+
+  #nav-bar-ctn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  #nav-bar {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  #nav-bar a {
+    text-decoration: none;
+    color: #344563;
+  }
+
+  #nav-bar a:hover {
+    color: #6e7f9e;
+  }
+
+  #works-ctnr {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #ab-me-desktop-img {
+    right: -14rem;
+    display: block;
+    position: absolute;
+  }
+
+  #ab-me-desktop-1-img {
+    left: -14rem;
+    display: block;
+    position: absolute;
+  }
+
+  #ab-me-img {
+    display: none;
+  }
+
+  #ab-me-1-img {
+    display: none;
+  }
+
+  #about-me {
+    padding: 6rem 10rem;
+  }
+
+  hr {
+    display: block;
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  #contact {
+    overflow: visible;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20rem;
+  }
+
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1;
+  }
+
+  #contact-text {
+    flex: 1 1;
+    text-align: justify;
+  }
+
+  form input {
+    flex: 1 1;
+  }
+
+  form textarea {
+    width: 100%;
+  }
+
+  #email-contact {
+    display: none;
+    position: absolute;
+    width: 100%;
+  }
+
+  form .see-btn {
+    flex: none;
+  }
+
+  #contact-img {
+    position: absolute;
+    bottom: -20rem;
+    left: -14rem;
+    background: url('./icons/contact-desk-1.svg') no-repeat, url('./icons/contact-desk-2.svg') no-repeat, url('./icons/contact-desk-3.svg') no-repeat;
+    background-size: 10rem, 14rem, 15rem;
+    background-position: 25% 60%, 0 150%, 100% 100%;
+    height: 30rem;
+    width: 100vw;
+    z-index: -1;
+  }
+}
