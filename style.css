@@ -161,14 +161,6 @@ body {
   scale: 1.2;
 }
 
-.soc-med-list {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  list-style: none;
-  align-items: center;
-}
-
 form .see-btn {
   align-self: center;
 }
@@ -226,7 +218,7 @@ footer {
   50% {
     scale: 1.5;
   }
-    
+
   100% {
     transform: rotate(360deg);
     scale: 1;
