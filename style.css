@@ -37,6 +37,7 @@ body {
   width: 100%;
   justify-content: flex-end;
   top: 2rem;
+  z-index: 10;
 }
 
 #menu-button {
@@ -45,13 +46,20 @@ body {
   width: 1.8rem;
 }
 
+#social-media img {
+  width: 1.5rem;
+}
+
+#menu-button img:hover {
+  cursor: pointer;
+}
+
 #headline {
   position: relative;
   margin-top: 10rem;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  animation: rotation 2s ease 1;
 }
 
 #primary-text {
@@ -82,10 +90,6 @@ body {
 
 #social-media {
   margin-top: 1.5rem;
-}
-
-#social-media img {
-  width: 1.5rem;
 }
 
 #header-img {
@@ -137,7 +141,7 @@ body {
 }
 
 #nav-bar a {
-  transition: 0.5s ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .soc-med-list {
@@ -209,18 +213,131 @@ footer {
   gap: 1.5rem;
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0);
-    scale: 1;
+#curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem 0;
+  background-color: #c1c7d0aa;
+  z-index: 11;
+  overflow: auto;
+  animation: popup 200ms ease 1;
+}
+
+#curtain.fade {
+  animation: fade 200ms ease 1;
+  opacity: 0;
+}
+
+#popup-ctr {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 50rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fff;
+  overflow: visible;
+  position: relative;
+}
+
+#popup-img-ctr {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#close-popup-btn {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  background-color: rgba(25, 27, 28, 0.428);
+}
+
+#close-popup-btn:hover {
+  cursor: pointer;
+}
+
+#popup-img {
+  width: 100%;
+}
+
+#btn-popup-ctr {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#btn-popup-ctr.desktop {
+  flex-wrap: nowrap;
+  height: 2.5rem;
+}
+
+#btn-popup-ctr button {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.2rem;
+}
+
+#skill-popup-ctr {
+  width: 80%;
+  display: flex;
+  justify-content: left;
+  gap: 0.5rem;
+  align-self: flex-start;
+}
+
+.tech-card.popup {
+  font-size: 0.8rem;
+}
+
+#work-desc {
+  color: #344563;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+#popup-name-ctr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#work-name {
+  font-weight: 600;
+  align-self: flex-start;
+  text-align: left;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #172b4d;
+  flex: 3 3;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
   }
 
-  50% {
-    scale: 1.5;
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
   }
 
-  100% {
-    transform: rotate(360deg);
-    scale: 1;
+  to {
+    opacity: 0;
   }
 }

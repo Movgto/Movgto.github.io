@@ -46,7 +46,7 @@
   width: 100%;
   height: auto;
   font-weight: 600;
-  font-size: max(min(4vw, 2rem), 1rem);
+  font-size: 1rem;
   line-height: 2rem;
   text-align: center;
   vertical-align: middle;
@@ -69,7 +69,7 @@
   background-color: #ebf0ee;
   border-radius: 0.3rem;
   font-weight: 600;
-  font-size: max(min(4vw, 0.8rem), 0.5rem);
+  font-size: 0.8rem;
   padding: 0.8rem 0.5rem;
   color: #172b4d;
 }

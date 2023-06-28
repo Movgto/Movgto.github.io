@@ -10,6 +10,7 @@
   "hints": [
     "button-type",
     "disown-opener",
+    "html-checker",
     "no-inline-styles:error"
   ]
 }

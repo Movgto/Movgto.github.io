@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Portfolio</title>
+    <title>Gumaro Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./support_styles/works.css" />
     <link rel="stylesheet" href="./support_styles/skills.css" />
     <link rel="stylesheet" href="./support_styles/about_me.css" />
     <link rel="stylesheet" href="./support_styles/contact.css" />
     <link rel="stylesheet" href="./support_styles/responsiveness.css" />
+    <link rel="stylesheet" href="./support_styles/mobile_menu.css" />
+    <script defer src="index.js"></script>
+    <script defer src="./js/pop-up.js"></script>
 </head>
 
 <body>
@@ -33,7 +36,7 @@
         </header>
         <nav id="toolbar">
             <div id="menu-button">
-                <object data="icons/icon-menu.svg"></object>
+                <img src="icons/icon-menu.svg" />
             </div>
         </nav>
         <section id="headline">
@@ -94,7 +97,7 @@
                                 <p>HTML</p>
                             </li>
                         </ul>
-                        <button class="see-btn">
+                        <button class="see-btn" type="button">
                             See Project
                         </button>
                     </div>
@@ -120,7 +123,7 @@
                                 <p>HTML</p>
                             </li>
                         </ul>
-                        <button class="see-btn">
+                        <button class="see-btn" type="button">
                             See Project
                         </button>
                     </div>
@@ -145,7 +148,7 @@
                             </li>
                         </ul>
                         <div class="bottom">
-                            <button class="see-btn">
+                            <button class="see-btn" type="button">
                                 See Project
                             </button>
                         </div>
@@ -171,7 +174,7 @@
                             </li>
                         </ul>
                         <div class="bottom">
-                            <button class="see-btn">
+                            <button class="see-btn" type="button">
                                 See Project
                             </button>
                         </div>
@@ -197,7 +200,7 @@
                             </li>
                         </ul>
                         <div class="bottom">
-                            <button class="see-btn">
+                            <button class="see-btn" type="button">
                                 See Project
                             </button>
                         </div>
@@ -223,7 +226,7 @@
                             </li>
                         </ul>
                         <div class="bottom">
-                            <button class="see-btn">
+                            <button class="see-btn" type="button">
                                 See Project
                             </button>
                         </div>
@@ -245,14 +248,14 @@
                 what you see and have a project you need coded,
                 don’t hesitate to contact me.
             </p>
-            <button class="see-btn">
+            <button class="see-btn" type="button">
                 Get my resume
             </button>
         </section>
 
         <section id="skills">
             <div class="skill-card">
-                <img class="skill-icon" src="icons/languages.svg" />
+                <img class="skill-icon" src="icons/languages.svg" alt="languages-logo" />
                 <p class="skill-text">Languages</p>
                 <ul class="skill-list">
                     <li>JavaScript</li>
@@ -262,7 +265,7 @@
                 </ul>
             </div>
             <div class="skill-card">
-                <img class="skill-icon" src="icons/frameworks.svg" />
+                <img class="skill-icon" src="icons/frameworks.svg" alt="frameworks-logo" />
                 <p class="skill-text">Frameworks</p>
                 <ul class="skill-list">
                     <li>React.js</li>
@@ -272,7 +275,7 @@
                 </ul>
             </div>
             <div class="skill-card">
-                <img class="skill-icon" src="icons/skills.svg" />
+                <img class="skill-icon" src="icons/skills.svg" alt="skills-logo" />
                 <p class="skill-text">Skills</p>
                 <ul class="skill-list">
                     <li>Database Management</li>
