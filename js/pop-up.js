@@ -5,8 +5,10 @@ const project = {
 };
 
 let popupAlive = false;
+let htmlElement = document.querySelector('html');
 
 function projectPopUp() {
+  htmlElement.style.overflowY = 'hidden';
   popupAlive = true;
   const popUpCtr = document.createElement('div');
   const curtainPopUp = document.createElement('div');
@@ -48,6 +50,7 @@ function projectPopUp() {
     curtainPopUp.classList.add('fade');
     fadeTimeout = setTimeout(() => {
       curtainPopUp.remove();
+      htmlElement.style.overflowY = 'auto';
       popupAlive = false;
     }, 200);
   });
