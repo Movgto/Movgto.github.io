@@ -37,6 +37,8 @@ function projectPopUp() {
   if (window.innerWidth > 765) {
     nameCtr.appendChild(btnCtr);
     btnCtr.classList.add('desktop');
+    // Code to change close button image here for desktop screen sizes when the popup is created...
+
   }
 
   const skillCtr = document.getElementById('skill-popup-ctr');
@@ -68,12 +70,14 @@ window.addEventListener('resize', () => {
     const nameCtr = document.getElementById('popup-name-ctr');
     const buttonCtr = document.getElementById('btn-popup-ctr');
     buttonCtr.classList.add('desktop');
+    // Code to change close button image here for desktop screen sizes...
 
     nameCtr.appendChild(buttonCtr);
   } else {
     const popupCtr = document.getElementById('popup-ctr');
     const buttonCtr = document.getElementById('btn-popup-ctr');
     buttonCtr.classList.remove('desktop');
+    // Code to change close button image here for mobile screen sizes...
 
     popupCtr.appendChild(buttonCtr);
   }
