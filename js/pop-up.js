@@ -5,7 +5,7 @@ const project = {
 };
 
 let popupAlive = false;
-let htmlElement = document.querySelector('html');
+const htmlElement = document.querySelector('html');
 
 function projectPopUp() {
   htmlElement.style.overflowY = 'hidden';

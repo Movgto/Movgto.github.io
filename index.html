@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./support_styles/mobile_menu.css" />
     <script defer src="index.js"></script>
     <script defer src="./js/pop-up.js"></script>
+    <script defer src="./js/validation.js"></script>
 </head>
 
 <body>
@@ -293,11 +294,12 @@
                 get in touch.
             </h2>
 
-            <form action="https://formspree.io/f/mjvdnklq" method="post">
-                <input maxlength="30" type="text" placeholder="Full name" name="name" required/>
-                <input type="email" placeholder="Email address" name="email" required/>
+            <form>
+                <input maxlength="30" type="text" placeholder="Full name" name="name"/>
+                <input placeholder="Email address" name="email"/>
                 <textarea rows="5" maxlength="500" type="text" name="description" placeholder="Hey I'd like to connect to..."></textarea>
                 <input class="see-btn" type="submit" value="Get in touch"/>
+                <small id="validation_msg"></small>
             </form>
             <p id="email-contact">maromvz@gmail.com</p>
             <div id="contact-img"></div>
