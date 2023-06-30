@@ -1,6 +1,11 @@
 const valMsg = document.getElementById('validation_msg');
 const inputs = document.querySelectorAll('form input, form textarea');
 let clearMsgTimeOut = null;
+let formData = {};
+
+if (localStorage.getItem('FormData')) {
+  formData = JSON.parse(localStorage.getItem('FormData'));
+}
 
 function validationHandler(e) {
   e.preventDefault();
@@ -64,3 +69,19 @@ function validationHandler(e) {
 }
 
 document.querySelector('form').addEventListener('submit', validationHandler);
+
+
+
+inputs.forEach((item) => {
+  const { name } = item;
+  if(item.type == 'submit') return;
+  console.log(name);
+  if(formData[name]) { 
+    item.value = formData[name];
+  }
+  item.addEventListener('change', (e) => {
+    formData[name] = e.target.value;
+    console.log('Updating data')
+    localStorage.setItem('FormData', JSON.stringify(formData))
+  });
+});
