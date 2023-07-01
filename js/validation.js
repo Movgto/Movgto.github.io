@@ -49,7 +49,10 @@ function validationHandler(e) {
     }
   });
 
-  
+  clearTimeout(clearMsgTimeOut);
+  valMsg.innerText = msgArr.join('\n');
+  clearMsgTimeOut = setTimeout(() => {
+    valMsg.innerText = '';
   }, 2000);
 
   if (emailOk && textOkArr.includes(false) === false) {
