@@ -16,12 +16,12 @@ function validationHandler(e) {
 
     switch (name) {
       case 'email':
-        emailOk = /^([a-z0-9-_.]+)@(\w+)\.(\w+)$/i.test(item.value);
+        emailOk = /^([a-z0-9-_.]+)@(\w+)\.(\w+)$/.test(item.value);
         if (emailOk) {
           item.classList.remove('invalid');
         } else {
           item.classList.add('invalid');
-          msgArr.push('Invalid email format');
+          msgArr.push('Invalid email format\nSuggestion: remember that all character must be lowercase.');
         }
         break;
       case 'name':
