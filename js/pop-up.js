@@ -1,4 +1,6 @@
 const worksCtr = document.getElementById('works-ctnr');
+let popupAlive = false;
+const htmlElement = document.querySelector('html');
 
 const projectsData = {
   projects: [{
@@ -132,7 +134,7 @@ projectsData.projects.forEach((item, i) => {
                             </div>
                         </div>
                         `;
-  const tech = workCard.querySelector(`.tech`);
+  const tech = workCard.querySelector('.tech');
   const seeBtn = workCard.querySelector('.see-btn');
   projectsData.projects[i].tech.forEach((item) => {
     const techCard = document.createElement('li');
@@ -144,9 +146,6 @@ projectsData.projects.forEach((item, i) => {
   worksCtr.appendChild(workCard);
   seeBtn.addEventListener('click', () => projectPopUp(i));
 });
-
-let popupAlive = false;
-const htmlElement = document.querySelector('html');
 
 window.addEventListener('resize', () => {
   if (window.innerWidth > 765 && popupAlive) {
