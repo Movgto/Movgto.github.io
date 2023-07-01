@@ -37,8 +37,8 @@ function projectPopUp() {
   if (window.innerWidth > 765) {
     nameCtr.appendChild(btnCtr);
     btnCtr.classList.add('desktop');
-    // TODO: Code to change close button image here for desktop screen sizes when the popup is created...
-
+    const popupImg = document.getElementById('close-popup-btn');
+    popupImg.setAttribute('src', './icons/cancel-desktop.svg');
   }
 
   const skillCtr = document.getElementById('skill-popup-ctr');
@@ -70,15 +70,15 @@ window.addEventListener('resize', () => {
     const nameCtr = document.getElementById('popup-name-ctr');
     const buttonCtr = document.getElementById('btn-popup-ctr');
     buttonCtr.classList.add('desktop');
-    // TODO: Code to change close button image here for desktop screen sizes...
-
+    const popupImg = document.getElementById('close-popup-btn');
+    popupImg.setAttribute('src', './icons/cancel-desktop.svg');
     nameCtr.appendChild(buttonCtr);
   } else {
     const popupCtr = document.getElementById('popup-ctr');
     const buttonCtr = document.getElementById('btn-popup-ctr');
     buttonCtr.classList.remove('desktop');
-    // TODO: Code to change close button image here for mobile screen sizes...
-
+    const popupImg = document.getElementById('close-popup-btn');
+    popupImg.setAttribute('src', './icons/cancel.svg');
     popupCtr.appendChild(buttonCtr);
   }
 });

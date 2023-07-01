@@ -343,4 +343,11 @@ footer {
   }
 }
 
-/* TODO: Code to change position of the closing button of the popup for desktop screen sizes(width greater than 765px) */
+@media only screen and (min-width: 765px) {
+  #close-popup-btn {
+    top: -2rem;
+    right: 0;
+    background-color: #EBECF0;
+    border-radius: 0.3rem;
+  }
+}
