@@ -2,7 +2,7 @@ const valMsg = document.getElementById('validation_msg');
 const inputs = document.querySelectorAll('form input, form textarea');
 let clearMsgTimeOut = null;
 
-// Validation function // 
+// Validation function //
 
 function validationHandler(e) {
   e.preventDefault();
