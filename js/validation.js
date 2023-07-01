@@ -70,18 +70,15 @@ function validationHandler(e) {
 
 document.querySelector('form').addEventListener('submit', validationHandler);
 
-
-
 inputs.forEach((item) => {
   const { name } = item;
-  if(item.type == 'submit') return;
-  console.log(name);
-  if(formData[name]) { 
+  if (item.type === 'submit') return;
+
+  if (formData[name]) {
     item.value = formData[name];
   }
   item.addEventListener('change', (e) => {
     formData[name] = e.target.value;
-    console.log('Updating data')
-    localStorage.setItem('FormData', JSON.stringify(formData))
+    localStorage.setItem('FormData', JSON.stringify(formData));
   });
 });
