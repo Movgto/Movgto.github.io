@@ -66,7 +66,7 @@ function validationHandler(e) {
       body: new FormData(document.querySelector('form'))
     });
 
-    alert('Your information has been succesfully delivered!');
+    alert('Your information has been succesfully delivered, I will contact you soon, thank you!');
   }
 }
 
