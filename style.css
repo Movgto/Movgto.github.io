@@ -323,6 +323,17 @@ footer {
   flex: 3 3;
 }
 
+/* Validation */
+
+.invalid {
+  border-color: red;
+}
+
+small {
+  line-height: 1.5rem;
+  color: red;
+}
+
 @keyframes popup {
   from {
     opacity: 0;
