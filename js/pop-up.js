@@ -7,10 +7,10 @@ const projectsData = {
     {
       name: 'Products Manager App',
       tech: ['React', 'Tailwindcss', 'Express', 'Sequelize', 'TypeScript', 'React Router DOM'],
-      desc: 'A simple to do list application using webpack to make the code easier to handle as it is splitted in different modules, and it also makes the debugging process lighter, as it allows you to reuse parts parts of your code as modules, which means there\'s less code to check.',
-      img: './images/todolist.png',
-      src: 'https://github.com/Movgto/ToDoList',
-      live: 'https://movgto.github.io/ToDoList/dist/'
+      desc: 'Product Manager Application made with PERN stack and more tools',
+      img: './images/product_manager_app.png',
+      src: 'https://github.com/Movgto/Movgto.github.io',
+      live: 'https://products-app-frontend-five.vercel.app/'
     },
     {
       name: 'Anime information application made with React-Redux',
