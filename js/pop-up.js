@@ -5,20 +5,20 @@ const htmlElement = document.querySelector('html');
 const projectsData = {
   projects: [
     {
+      name: 'Products Manager App',
+      tech: ['React', 'Tailwindcss', 'Express', 'Sequelize', 'TypeScript', 'React Router DOM'],
+      desc: 'A simple to do list application using webpack to make the code easier to handle as it is splitted in different modules, and it also makes the debugging process lighter, as it allows you to reuse parts parts of your code as modules, which means there\'s less code to check.',
+      img: './images/todolist.png',
+      src: 'https://github.com/Movgto/ToDoList',
+      live: 'https://movgto.github.io/ToDoList/dist/'
+    },
+    {
       name: 'Anime information application made with React-Redux',
       tech: ['React', 'Redux', 'React-Router', 'JavaScript'],
       desc: 'This project is an application for viewing anime shows information built with ReactJS framework. It applies Components and Hooks along with GitFlow workflow. State management is implemented using Redux & Redux Toolkit. External data fetching is done with an asynchronous Thunk & Axios. Navigation is implemented using React-Router',
       img: './images/animepedia.png',
       src: 'https://github.com/Movgto/react-capstone',
       live: 'https://the-animepedia.onrender.com/'
-    },
-    {
-      name: 'To-do list application using webpack',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      desc: 'A simple to do list application using webpack to make the code easier to handle as it is splitted in different modules, and it also makes the debugging process lighter, as it allows you to reuse parts parts of your code as modules, which means there\'s less code to check.',
-      img: './images/todolist.png',
-      src: 'https://github.com/Movgto/ToDoList',
-      live: 'https://movgto.github.io/ToDoList/dist/'
     },
     {
       name: 'Handling data dinamically with JavaScript',
